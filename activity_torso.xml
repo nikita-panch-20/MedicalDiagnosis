@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.gs.medicaldiagnosisexpertsystem.TorsoActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <CheckBox
+                android:id="@+id/checkBoxPainStomach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dull pain in the stomach"
+                android:onClick="onCheckboxClicked"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.181"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <CheckBox
+                android:id="@+id/checkBoxNausea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nausea or Vomiting"
+                android:onClick="onCheckboxClicked"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.181"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <CheckBox
+                android:id="@+id/checkBoxBurn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Burning sensation in the chest"
+                android:onClick="onCheckboxClicked"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTemperature" />
+            <CheckBox
+                android:id="@+id/checkBoxBurp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Burping or Bloating sensation"
+                android:onClick="onCheckboxClicked"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.181"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <CheckBox
+                android:id="@+id/checkBoxHeartBeat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Irregular or faster heartbeat"
+                android:onClick="onCheckboxClicked"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.181"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <CheckBox
+                android:id="@+id/checkBoxWeakness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:text="Weakness, dizziness or fatique"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTemperature" />
+
+
+            <CheckBox
+                android:id="@+id/checkBoxSweat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sweating"
+                android:onClick="onCheckboxClicked"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTemperature" />
+            <CheckBox
+                android:id="@+id/checkBoxAppetite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loss of appetite and weight loss"
+                android:onClick="onCheckboxClicked"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTemperature" />
+
+            <CheckBox
+                android:id="@+id/checkBoxAbdomen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Abdominal pain"
+                android:onClick="onCheckboxClicked"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.225"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextCold" />
+            <CheckBox
+                android:id="@+id/checkBoxDiarrhea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:text="Loose Stools(Diarrhea, Dysentry) or constipation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.225"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextCold" />
+            <CheckBox
+                android:id="@+id/checkBoxMuscles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:text="Muscle cramps or pains"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.225"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextCold" />
+            <CheckBox
+                android:id="@+id/checkBoxBreathe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:text="Breathlessness"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.225"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextCold" />
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorAccent"
+                android:text="Submit"
+                android:onClick="OnTap"/>
+            <Button
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="OnGetReportTapped"
+                android:background="@color/colorAccent"
+                android:text="Get Report"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

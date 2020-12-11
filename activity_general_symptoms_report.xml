@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".GeneralSymptomsReportActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/logoImage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:transitionName="logoImage"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@drawable/medical1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REPORT"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Symptoms:"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="High Temperature(99-105):"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/textViewHighTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:textSize="15sp"
+        android:textColor="#000"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Normal Temperature(94-99):"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/textViewNormalTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:textSize="15sp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Running Nose,Sneezing(Chills):"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/textViewRunNose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:textSize="15sp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phlegm Occurence(Greenish):"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/textViewPhlegm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:textSize="15sp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dry Cough:"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/textViewDryCough"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:textSize="15sp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wet Cough:"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/textViewWetCough"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:textSize="15sp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Body pains:"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/textViewWhoopCough"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:textSize="15sp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Severe head ache(Heaviness):"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/textViewSevereAche"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:textSize="15sp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mild head ache:"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/textViewMildAche"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:textSize="15sp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eye sight:"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/textViewEyeSight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:textSize="15sp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Any allegeries or any other issues:"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/textViewNoseAllergy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:textSize="15sp"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/textViewThroatAllergy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:textSize="15sp"
+        android:textColor="#000"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disease Diagnosed and Treatment:"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/textViewDisease"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Could not predict. Consult a physician in case of emergency."
+        android:textSize="15sp"
+        android:textColor="#000"/>
+
+
+
+</LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

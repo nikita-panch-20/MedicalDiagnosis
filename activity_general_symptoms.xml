@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.gs.medicaldiagnosisexpertsystem.GeneralSymptomsActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:text="Temperature (In Fahrenheit):"
+            android:textColor="#000000"
+            android:paddingLeft="20dp"
+            android:textSize="20sp"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="94-99"
+            android:onClick="onCheckboxClicked"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.181"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <CheckBox
+            android:id="@+id/checkBoxHigh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="99-105"
+            android:onClick="onCheckboxClicked"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.181"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cold Issues:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            />
+    <CheckBox
+        android:id="@+id/checkBoxRunningNose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Running Nose,Sneezing(Chills)"
+        android:onClick="onCheckboxClicked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTemperature" />
+        <CheckBox
+            android:id="@+id/checkBoxBreathing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phlegm Occurence(Greenish)"
+            android:onClick="onCheckboxClicked"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTemperature" />
+        <CheckBox
+            android:id="@+id/checkBoxColdAllergy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="Any allegeries or any other issues,if any Mention Below "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTemperature" />
+
+        <EditText
+            android:id="@+id/editTextCold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Mention the allergy or issues"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.141"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxCold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cough Issues:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxDryCough"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dry Cough"
+            android:onClick="onCheckboxClicked"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.225"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextCold" />
+        <CheckBox
+            android:id="@+id/checkBoxWetCough"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:onClick="onCheckboxClicked"
+            android:text="Wet Cough"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.225"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextCold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxWhoopingCough"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="Body Pains"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.225"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextCold" />
+        <CheckBox
+            android:id="@+id/checkBoxCoughAllergy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="Any Allergies or any other Issues.If yes, Mention below."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.225"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextCold" />
+
+        <EditText
+            android:id="@+id/editTextCough"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Mention the allergy or issue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.141"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxCough" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Head Ache Issues:"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSevereHeadAche"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked"
+        android:text="Severe head ache(Heaviness)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCough" />
+        <CheckBox
+            android:id="@+id/checkBoxMildHeadAche"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mild head ache"
+            android:onClick="onCheckboxClicked"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.067"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextCough" />
+        <CheckBox
+            android:id="@+id/checkBoxEyeSight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="Eye sight or any other Issues. If yes, Mention below"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.067"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextCough" />
+
+    <EditText
+        android:id="@+id/editTextheadAche"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Mention the Eye Sight or any other issues"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxHeadAche"
+        app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnSubmitTapped"
+            android:background="@color/colorAccent"
+            android:text="Submit Symptoms"/>
+        <Button
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnGetReportTapped"
+            android:background="@color/colorAccent"
+            android:text="Get Report"/>
+    </LinearLayout>
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

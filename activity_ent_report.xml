@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".EntReportActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/logoImage"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:transitionName="logoImage"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/medical1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REPORT"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Symptoms:"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eye Burning:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewEyeBurn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Redness in eye:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewRedEye"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Frequent watering:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewTearEye"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dryness in eye:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewDryEye"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nasal Congestion:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewNasalCong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bleeding of nose:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewNoseBleed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Irritation in throat(Painful Throat):"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewIrritation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change of Voice:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewVoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sore Throat:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewSoreThroat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dryness Throat:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewDryThroat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ear Ache(Severe or Mild):"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewEarAche"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hearing Loss:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewHearLoss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ringing of ears:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewRingEar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Difficulty in balance or walking:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewBalance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Feeling of Ear fullness:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewEarFull"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eye sight:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewEyeSight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Any allegeries or any other issues:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewNoseAllergy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewThroatAllergy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Disease Diagnosed and Treatment:"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewDisease"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="disease"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

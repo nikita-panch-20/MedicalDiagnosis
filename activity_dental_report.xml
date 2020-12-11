@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".GeneralSymptomsReportActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/logoImage"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:transitionName="logoImage"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/medical1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REPORT"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Symptoms:"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yellowing of Teeth:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewYellow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tooth Ache:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewToothAche"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dry Mouth:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewDryMouth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bleeding or Swollen gums:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewBleed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bad Breathe from mouth:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewBad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sores inside mouth:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewSores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sensitivity:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewSensitive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Disease Diagnosed and Treatment:"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewDisease"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="disease"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
