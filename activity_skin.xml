@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.gs.medicaldiagnosisexpertsystem.SkinActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <CheckBox
+                android:id="@+id/checkBoxPimple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pimples, Acnes and Scars"
+                android:onClick="onCheckboxClicked"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.181"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <CheckBox
+                android:id="@+id/checkBoxRashes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rashes"
+                android:onClick="onCheckboxClicked"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.181"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <CheckBox
+                android:id="@+id/checkBoxItchy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Itchy Skin"
+                android:onClick="onCheckboxClicked"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTemperature" />
+            <CheckBox
+                android:id="@+id/checkBoxSwelling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Swelling of skin"
+                android:onClick="onCheckboxClicked"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.181"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <CheckBox
+                android:id="@+id/checkBoxRedCluster"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clusters of reddish spots(Shingles)"
+                android:onClick="onCheckboxClicked"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.181"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <CheckBox
+                android:id="@+id/checkBoxSunBurn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:text="SunBurn(Burning and Reddish occurence)"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTemperature" />
+
+
+            <CheckBox
+                android:id="@+id/checkBoxPeeling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Peeling of skin"
+                android:onClick="onCheckboxClicked"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTemperature" />
+            <CheckBox
+                android:id="@+id/checkBoxClusterSkin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ring like clusters on skin"
+                android:onClick="onCheckboxClicked"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTemperature" />
+
+            <CheckBox
+                android:id="@+id/checkBoxPrick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pricky Skin"
+                android:onClick="onCheckboxClicked"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.225"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextCold" />
+            <CheckBox
+                android:id="@+id/checkBoxSkinAllergy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:text="Any Known Allergies, Mention below."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.225"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextCold" />
+
+            <EditText
+                android:id="@+id/editTextSkinAllergy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Mention the allergy"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.141"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkBoxCough" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorAccent"
+                android:text="Submit"
+                android:onClick="OnTap"/>
+            <Button
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="OnGetReportTapped"
+                android:background="@color/colorAccent"
+                android:text="Get Report"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

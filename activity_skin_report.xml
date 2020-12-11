@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".SkinReportActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/logoImage"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:transitionName="logoImage"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/medical1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REPORT"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Symptoms:"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pimples, Acnes and Scars:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewPimple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rashes:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewRash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Itchy Skin:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewItch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Swelling of skin:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewSwell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clusters of reddish spots(Shingles):"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewShingles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SunBurn(Burning and Reddish occurence):"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewSunBurn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Peeling of skin:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewPeel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ring like clusters on skin:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewSkinRing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pricky Skin:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewPrick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Any Known allegeries:"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewSkinAllergy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Disease Diagnosed and Treatment:"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewDisease"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="disease"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
